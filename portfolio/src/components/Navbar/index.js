@@ -27,7 +27,7 @@ const Navbar = () => {
         return (
           <StyledNavbar>
             <Link to="/">Home</Link>
-            <Link to="/products">Products</Link>
+            <Link to="/Projects">Projects</Link>
           </StyledNavbar>
         )
 }
