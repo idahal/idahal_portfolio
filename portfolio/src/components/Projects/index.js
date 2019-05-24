@@ -1,31 +1,31 @@
-import React  from "react"
+import React from "react";
 import styled from "styled-components";
-
-
+import ProjectsItem from '../ProjectsItem';
 
 const StyledProjects = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #151d1b;
-    width: 100%;
-    color: #000000;
-
-
   @media screen and (max-width: 800px) {
 
   }
 `;
 
-const Projects = () => {
-        return (
-          <StyledProjects>
 
-              <h1>Hejhej</h1>
+const Projects = props => {
+    return (
+      <StyledProjects>
+        <div className="Projects">
+           {props.items.map((item, key) => (
+               <ProjectsItem
+                    key={key}
+                    name={item.name}
+                    description={item.description}
+                    link={item.link}
+               />
+           ))}
+        </div>
+        </StyledProjects>
+    );
+};
 
-          </StyledProjects>
-        )
-}
 
-export default Projects
+
+export default Projects;
