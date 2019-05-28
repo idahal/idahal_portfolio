@@ -5,20 +5,28 @@ import styled from "styled-components";
 
 const StyledHamburgerBar = styled.div`
 @media screen and (max-width: 800px) {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #ffffff;
-    font-size: 18px;
+    button {
+      background: none;
+      border: none;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+  .menu {
+      width: 100vw;
+      height: 50vh;
+      background: #ffffff;
+      position: absolute;
+    }
   a {
     color: #1d191d;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
-    margin: 0 10px;
-    dispaly: block;
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    align-items: flex-end;
   }
 }
   @media screen and (min-width: 800px) {
@@ -60,12 +68,11 @@ class HamburgerBar extends Component {
         <StyledHamburgerBar>
           <button onClick={this.showMenu}>
             <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="36" height="3.0" rx="1.8" fill="#ffffff"/>
-              <rect y="9.6001" width="36" height="3.0" rx="1.8" fill="#ffffff"/>
-              <rect y="20.3999" width="36" height="3.0" rx="1.8" fill="#ffffff"/>
+              <rect width="36" height="3.0" rx="1.8" fill="#000000"/>
+              <rect y="9.6001" width="36" height="3.0" rx="1.8" fill="#000000"/>
+              <rect y="20.3999" width="36" height="3.0" rx="1.8" fill="#000000"/>
             </svg>
           </button>
-        </StyledHamburgerBar>
 
         {
           this.state.showMenu ? (
@@ -75,6 +82,7 @@ class HamburgerBar extends Component {
               </div>
           ) : (null)
         }
+        </StyledHamburgerBar>
       </div>
     );
   }
