@@ -4,13 +4,8 @@ import './App.css';
 import Navbar from "../Navbar";
 import Header from "../Header";
 import HamburgerBar from "../HamburgerBar";
-import logo from './logo_big.svg';
-
-
 import Projects from "../Projects";
-import projects from '../../data/projects';
-
-
+import logo from './logo_big.svg';
 
 
 function App() {
@@ -24,7 +19,7 @@ function App() {
       </Router>
 
       <Router>
-        <Projects items={projects} path="/projects"/>
+        <Projects path="/projects" />
       </Router>
     </div>
   );
