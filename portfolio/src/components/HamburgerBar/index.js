@@ -5,28 +5,31 @@ import styled from "styled-components";
 
 const StyledHamburgerBar = styled.div`
 @media screen and (max-width: 800px) {
+  height: 10vh;
     button {
       background: none;
       border: none;
       position: fixed;
       top: 10px;
       right: 10px;
+      z-index: 1;
     }
   .menu {
-      width: 100vw;
-      height: 50vh;
-      background: #ffffff;
-      position: absolute;
+    width: 100vw;
+    height: 50vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     }
   a {
     color: #1d191d;
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
-    display: flex;
-    height: 5vh;
-    justify-content: center;
-    align-items: flex-end;
+    padding-bottom: 10px;
   }
 }
   @media screen and (min-width: 800px) {
