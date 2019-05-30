@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from "styled-components";
 import fastSecurityDesktop from '../../../src/images/fs_square.jpg';
 import memoryDesktop from '../../../src/images/memory_square.PNG';
 import photoifyDesktop from '../../../src/images/photoify_square.jpg';
@@ -25,10 +26,27 @@ const projects = [  {
   }
 ]
 
+
+
+
+const StyledProjects = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ffffff;
+  width: 100%;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
 class Projects extends Component {
     render() {
         return (
           <div className="Projects">
+          <StyledProjects>
              {projects.map((e, key) => (
                  <ListOfProjects
                  key={key}
@@ -36,6 +54,7 @@ class Projects extends Component {
                  description={e.description}
                  />
              ))}
+             </StyledProjects>
           </div>
 
           )}

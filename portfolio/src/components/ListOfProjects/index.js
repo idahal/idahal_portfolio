@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 
+
 const StyledProjectsItem = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: column;
-  align-items: center;
+  flex-direction: column;
   background-color: #ffffff;
-  width: 50%;
-  color: red;
-  border: 1px solid black;
+  width: 30%;
+  color: #1d191d;
+  border: 3px solid #e0cbbd;
   border-radius: 4px;
+  text-align: center;
+
 img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
 }
 
   @media screen and (max-width: 800px) {
-
+      width: 80%;
+      margin-bottom: 2%;
   }
 `;
 
