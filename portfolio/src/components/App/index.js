@@ -3,6 +3,7 @@ import { Router } from "@reach/router";
 import './App.css';
 import Navbar from "../Navbar";
 import Header from "../Header";
+import Contact from "../Contact";
 import HamburgerBar from "../HamburgerBar";
 import Projects from "../Projects";
 import logo from './logo_big.svg';
@@ -20,6 +21,10 @@ function App() {
 
       <Router>
         <Projects path="/projects" />
+      </Router>
+
+      <Router>
+        <Contact path="/contact"/>
       </Router>
     </div>
   );

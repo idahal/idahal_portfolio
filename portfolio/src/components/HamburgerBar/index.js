@@ -82,6 +82,8 @@ class HamburgerBar extends Component {
               <div className="menu" ref={(e) => {this.dropdownMenu = e;}}>
                 <Link to="/">Home</Link>
                 <Link to="/projects">Projects</Link>
+                <Link to="/contact">Contact</Link>
+
               </div>
           ) : (null)
         }
