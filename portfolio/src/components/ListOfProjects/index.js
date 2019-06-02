@@ -13,28 +13,42 @@ const StyledProjectsItem = styled.div`
   text-align: center;
 
 img {
-  width: 100%;
+  width: 90%;
 }
 
-  @media screen and (max-width: 800px) {
-      width: 80%;
-      margin-bottom: 2%;
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1d191d;
+}
+
+:hover {
+  width: 32%;
+  background-color: #e0cbbd;
+}
+
+@media screen and (max-width: 800px) {
+  width: 80%;
+  margin-bottom: 2%;
+    :hover {
+      width: 82%;
+    }
   }
 `;
 
 class ListOfProjects extends Component {
-    render() {
-        return (
-          <StyledProjectsItem>
-              <div>
-                  <h3>{this.props.name}</h3>
-                  <img src={this.props.image} alt="project_photo"/>
-                  <p>{this.props.description}</p>
-                  <a href={this.props.link}>Läs mer</a>
-              </div>
-              </StyledProjectsItem>
-        )
-        }
+  render() {
+      return (
+        <StyledProjectsItem>
+          <div>
+            <h3>{this.props.name}</h3>
+            <img src={this.props.image} alt="project_photo"/>
+            <p>{this.props.description}</p>
+            <p><a href={this.props.link}>Mer om projektet...</a></p>
+          </div>
+      </StyledProjectsItem>
+    )
+  }
 }
 
 export default ListOfProjects;
