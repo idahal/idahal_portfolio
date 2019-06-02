@@ -6,7 +6,7 @@ body {
 
 .App-logo {
   z-index: 1;
-  position: fixed;
+  position: absolute;
   top: 10px;
   left: 10px;
 }
