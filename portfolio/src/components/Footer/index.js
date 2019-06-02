@@ -9,31 +9,28 @@ const StyledFooter = styled.div`
   height: 15vh;
   color: #1d191d;
 
-hr {
-  text-decoration: none;
-  width: 80%;
-  border: 2px #1d191d solid;
-}
+  hr {
+    text-decoration: none;
+    width: 80%;
+    border: 2px #1d191d solid;
+  }
 
-p {
-  align-self: flex-end;
-}
+  p {
+    align-self: flex-end;
+  }
 
-  @media screen and (max-width: 800px) {
-
-    hr {
-    }
+@media screen and (max-width: 800px) {
+  hr {
+  }
 
   }
 `;
 
-
-
 const Footer = () => (
-    <StyledFooter>
-        <hr></hr>
-        <p>Copyright Ida Hallner 2019</p>
-    </StyledFooter>
+  <StyledFooter>
+      <hr></hr>
+      <p>Copyright Ida Hallner {(new Date().getFullYear())}</p>
+  </StyledFooter>
 )
 
 
