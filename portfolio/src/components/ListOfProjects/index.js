@@ -6,14 +6,15 @@ const StyledProjectsItem = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  width: 30%;
+  width: 25%;
   color: #1d191d;
   border: 3px solid #e0cbbd;
-  border-radius: 4px;
+  border-radius: 10px;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 img {
-  width: 90%;
+  width: 70%;
 }
 
 a {
@@ -22,8 +23,12 @@ a {
   color: #1d191d;
 }
 
+header p {
+  padding: 5%;
+}
+
 :hover {
-  width: 32%;
+  width: 27%;
   background-color: #e0cbbd;
 }
 
@@ -37,16 +42,16 @@ a {
 `;
 
 class ListOfProjects extends Component {
-  render() {
+    render() {
       return (
         <StyledProjectsItem>
           <div>
             <h3>{this.props.name}</h3>
             <img src={this.props.image} alt="project_photo"/>
             <p>{this.props.description}</p>
-            <p><a href={this.props.link}>Mer om projektet...</a></p>
+            <p><a href={this.props.link}>More about the project...</a></p>
           </div>
-      </StyledProjectsItem>
+        </StyledProjectsItem>
     )
   }
 }
