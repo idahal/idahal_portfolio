@@ -21,7 +21,9 @@ const StyledContact = styled.div`
   @media screen and (max-width: 800px) {
     text-align: center;
     div h1 {
-      font-size: 50px;
+      font-size: 70px;
+      margin-left: 5%;
+      text-align: left;
     }
   }
 `;
