@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 import { Link } from "@reach/router";
 import styled from "styled-components";
 
-
 const StyledHamburgerBar = styled.div`
 @media screen and (max-width: 800px) {
   height: 10vh;
-    button {
-      background: none;
-      border: none;
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      z-index: 1;
+  button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
     }
   .menu {
     width: 100vw;
@@ -32,9 +31,9 @@ const StyledHamburgerBar = styled.div`
     padding-bottom: 10px;
   }
 }
-  @media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) {
     display: none;
-  }
+}
 `;
 
 class HamburgerBar extends Component {
@@ -44,7 +43,6 @@ class HamburgerBar extends Component {
     this.state = {
       showMenu: false,
     };
-
     this.showMenu = this.showMenu.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
   }
@@ -57,12 +55,10 @@ class HamburgerBar extends Component {
     });
   }
 
-  closeMenu(event) {
-    if (!this.dropdownMenu.contains(event.target)) {
-      this.setState({ showMenu: false }, () => {
-        document.removeEventListener('click', this.closeMenu);
-      });
-    }
+  closeMenu() {
+    this.setState({ showMenu: false }, () => {
+      document.removeEventListener('click', this.closeMenu);
+    });
   }
 
   render() {
@@ -79,11 +75,10 @@ class HamburgerBar extends Component {
 
         {
           this.state.showMenu ? (
-              <div className="menu" ref={(e) => {this.dropdownMenu = e;}}>
+              <div className="menu">
                 <Link to="/">Home</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link>
-
               </div>
           ) : (null)
         }
@@ -92,6 +87,5 @@ class HamburgerBar extends Component {
     );
   }
 }
-
 
 export default HamburgerBar;
