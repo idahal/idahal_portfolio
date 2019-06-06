@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "@reach/router";
 import styled from "styled-components";
+import hamburger from './hamburger.svg';
 
 const StyledHamburgerBar = styled.div`
 @media screen and (max-width: 800px) {
@@ -66,13 +67,8 @@ class HamburgerBar extends Component {
       <div>
         <StyledHamburgerBar>
           <button onClick={this.showMenu}>
-            <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="36" height="3.0" rx="1.8" fill="#000000"/>
-              <rect y="9.6001" width="36" height="3.0" rx="1.8" fill="#000000"/>
-              <rect y="20.3999" width="36" height="3.0" rx="1.8" fill="#000000"/>
-            </svg>
+            <img src={hamburger} alt="hamburger" />
           </button>
-
         {
           this.state.showMenu ? (
               <div className="menu">
