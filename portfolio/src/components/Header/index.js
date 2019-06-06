@@ -3,13 +3,13 @@ import styled from "styled-components";
 import profile_picture from './profile_picture.jpg';
 
 const StyledHeader = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #e0cbbd;
-    width: 100%;
-    height: 75vh;
-    color: #1d191d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e0cbbd;
+  width: 100%;
+  height: 75vh;
+  color: #1d191d;
 
   header h1 {
     font-size: 90px;
@@ -45,15 +45,15 @@ const StyledHeader = styled.div`
 `;
 
 const Header = () => {
-  return (
-    <StyledHeader>
-      <header>
-        <h1>Hello.</h1>
-        <img src={profile_picture} className="profileImage" alt="profile_image" />
-        <h3>I`m Ida Hallner a web developer student at Yrgo gothenburg.</h3>
-      </header>
-    </StyledHeader>
-  )
-}
+    return (
+      <StyledHeader>
+        <header>
+          <h1>Hello.</h1>
+          <img src={profile_picture} className="profileImage" alt="profile_image" />
+          <h3>I`m Ida Hallner a web developer student at Yrgo gothenburg.</h3>
+          </header>
+      </StyledHeader>
+    )
+  }
 
 export default Header

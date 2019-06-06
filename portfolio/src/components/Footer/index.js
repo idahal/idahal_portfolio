@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+
 const StyledFooter = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,20 +17,17 @@ const StyledFooter = styled.div`
   }
 
   p {
-    align-self: flex-end;
+  align-self: flex-end;
   }
 
 @media screen and (max-width: 800px) {
-  hr {
-  }
-
   }
 `;
 
 const Footer = () => (
   <StyledFooter>
-      <hr></hr>
-      <p>Copyright Ida Hallner {(new Date().getFullYear())}</p>
+    <hr></hr>
+    <p>Copyright Ida Hallner {(new Date().getFullYear())}</p>
   </StyledFooter>
 )
 

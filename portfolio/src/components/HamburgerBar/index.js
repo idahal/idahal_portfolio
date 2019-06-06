@@ -6,6 +6,7 @@ import hamburger from './hamburger.svg';
 const StyledHamburgerBar = styled.div`
 @media screen and (max-width: 800px) {
   height: 10vh;
+
   button {
     background: none;
     border: none;
@@ -14,6 +15,7 @@ const StyledHamburgerBar = styled.div`
     right: 10px;
     z-index: 1;
     }
+
   .menu {
     width: 100vw;
     height: 50vh;
@@ -24,6 +26,7 @@ const StyledHamburgerBar = styled.div`
     justify-content: center;
     position: relative;
     }
+
   a {
     color: #1d191d;
     text-decoration: none;
@@ -32,9 +35,10 @@ const StyledHamburgerBar = styled.div`
     padding-bottom: 10px;
   }
 }
-@media screen and (min-width: 800px) {
+
+  @media screen and (min-width: 800px) {
     display: none;
-}
+  }
 `;
 
 class HamburgerBar extends Component {

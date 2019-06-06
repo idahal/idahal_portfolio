@@ -5,9 +5,9 @@ import Navbar from "../Navbar";
 import Header from "../Header";
 import Contact from "../Contact";
 import HamburgerBar from "../HamburgerBar";
+import Footer from "../Footer";
 import Projects from "../Projects";
 import logo from './logo_big.svg';
-
 
 function App() {
   return (
@@ -16,16 +16,12 @@ function App() {
       <Navbar />
       <HamburgerBar />
       <Router>
-        <Header path="/"/>
-      </Router>
-
-      <Router>
+        <Header path="/" />
         <Projects path="/projects" />
-      </Router>
-
-      <Router>
         <Contact path="/contact"/>
       </Router>
+      <Footer />
+
     </div>
   );
 }

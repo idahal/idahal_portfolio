@@ -23,6 +23,7 @@ const StyledContact = styled.div`
 
   @media screen and (max-width: 800px) {
     text-align: center;
+
     div h1 {
       font-size: 70px;
       margin-left: 5%;
