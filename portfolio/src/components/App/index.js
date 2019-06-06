@@ -12,7 +12,7 @@ import logo from './logo_big.svg';
 function App() {
   return (
     <div className="App">
-    <img src={logo} className="App-logo" alt="logo" />
+      <img src={logo} className="App-logo" alt="logo" />
       <Navbar />
       <HamburgerBar />
       <Router>
@@ -21,7 +21,6 @@ function App() {
         <Contact path="/contact"/>
       </Router>
       <Footer />
-
     </div>
   );
 }
