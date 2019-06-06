@@ -5,13 +5,13 @@ import photoifyDesktop from '../../src/images/photoify_square.jpg';
 const projects = [  {
       name: "Photoify",
       image: photoifyDesktop,
-      description: "This is a project written in HTML, CSS, Javascripts and PHP. The project är build throw a SQLIte database. This is a shcool project where the assignment was to create a Instragram clone.",
+      description: "This is a project written in HTML, CSS, Javascripts and PHP. The project was build throw a SQLIte database. This is a school project where the assignment was to create a Instragram clone.",
       link: "https://github.com/idahal/Photoify"
   },
   {
       name: "Fuzzy-Memory",
       image: memoryDesktop,
-      description: "A memory game. This project is written in HTML, CSS and Javascript. Try to find matching card and play agian when you win.",
+      description: "A memory game. This project is written in HTML, CSS and Javascript. Try to find matching card and play again when you win.",
       link: "https://github.com/idahal/Fuzzy-Memory",
   },
   {
