@@ -7,7 +7,7 @@ const StyledFooter = styled.div`
   justify-content: center;
   background-color: #ffffff;
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   color: #1d191d;
 
   hr {
@@ -17,7 +17,8 @@ const StyledFooter = styled.div`
   }
 
   p {
-  align-self: flex-end;
+    font-size: 14px;
+    align-self: flex-end;
   }
 
 @media screen and (max-width: 800px) {
