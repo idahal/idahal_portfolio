@@ -1,6 +1,6 @@
 import React  from "react"
 import styled from "styled-components";
-import profile_picture from './profile_picture.jpg';
+import profile_picture from '../../../src/images/profile_picture.png';
 
 const StyledHeader = styled.div`
   display: flex;
@@ -17,8 +17,8 @@ const StyledHeader = styled.div`
     }
 
   .profileImage {
-    height: 30%;
-    width: 30%;
+    height: 35%;
+    width: 35%;
     border-radius: 50%;
     display: flex;
     margin: auto;
@@ -38,8 +38,7 @@ const StyledHeader = styled.div`
     }
 
     .profileImage {
-      height: 30%;
-      width: 40%;
+      width: 45%;
     }
   }
 `;
