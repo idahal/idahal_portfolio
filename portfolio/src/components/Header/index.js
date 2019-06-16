@@ -13,12 +13,12 @@ const StyledHeader = styled.div`
 
   header h1 {
     font-size: 90px;
-    margin-bottom: 2%;
+    margin: 2% 0 2% 0;
     }
 
   .profileImage {
-    height: 35%;
-    width: 35%;
+    height: 220px;
+    width: 220px;
     border-radius: 50%;
     display: flex;
     margin: auto;
@@ -35,10 +35,6 @@ const StyledHeader = styled.div`
 
     header h3 {
       padding: 5%;
-    }
-
-    .profileImage {
-      width: 45%;
     }
   }
 `;

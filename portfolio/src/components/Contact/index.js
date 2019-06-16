@@ -15,6 +15,7 @@ const StyledContact = styled.div`
 
   div h1 {
     font-size: 90px;
+    margin: 2% 0 2% 0;
   }
 
   a {
@@ -28,9 +29,11 @@ const StyledContact = styled.div`
     div h1 {
       line-height: 1;
       font-size: 70px;
-      margin-left: 5%;
-      margin-bottom: 2%;
+      margin: 0% 0% 2% 5%;
       text-align: left;
+    }
+    .title_visit .title_email{
+      margin-top: 5%;
     }
   }
 `;
@@ -40,10 +43,10 @@ const Contact = () => {
     <StyledContact>
       <div>
         <h1>Contact me.</h1>
-        <h3>Email is the best way: </h3>
+        <h2 className="title_email">Email is the best way: </h2>
         <h4>idahallner@live.se</h4>
 
-        <h3>Or visit me on:</h3>
+        <h2 className="title_visit">Or visit me on:</h2>
         <a href="https://www.linkedin.com/in/ida-hallner-545a65179/">
           <img src={linkedin} alt="in-logo" />
         </a>
