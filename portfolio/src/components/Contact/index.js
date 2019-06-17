@@ -10,7 +10,6 @@ const StyledContact = styled.div`
   justify-content: center;
   background-color: #e0cbbd;
   width: 100%;
-  height: 75vh;
   color: #1d191d;
 
   div h1 {
@@ -32,8 +31,8 @@ const StyledContact = styled.div`
       margin: 10% 0% 2% 5%;
       text-align: left;
     }
-    .title_visit .title_email{
-      margin-top: 5%;
+    .title_visit, .title_email{
+      margin-top: 10%;
     }
   }
 `;

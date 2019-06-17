@@ -7,7 +7,6 @@ const StyledProjectsItem = styled.div`
   flex-direction: column;
   background-color: #ffffff;
   width: 27%;
-  height: 82%;
   color: #1d191d;
   border: 3px solid #e0cbbd;
   border-radius: 10px;
@@ -35,7 +34,6 @@ header p {
 
 @media screen and (max-width: 800px) {
   width: 80%;
-  height: 30%;
   margin-bottom: 2%;
     :hover {
       width: 82%;

@@ -9,12 +9,10 @@ const StyledProjects = styled.div`
   justify-content: space-around;
   background-color: #ffffff;
   width: 100%;
-  height: 75vh;
 
 @media screen and (max-width: 800px) {
   flex-direction: column;
   align-items: center;
-  height: 200vh;
   }
 `;
 

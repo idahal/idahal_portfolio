@@ -8,7 +8,6 @@ const StyledHeader = styled.div`
   justify-content: center;
   background-color: #e0cbbd;
   width: 100%;
-  height: 75vh;
   color: #1d191d;
 
   header h1 {

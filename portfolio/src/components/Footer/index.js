@@ -7,8 +7,8 @@ const StyledFooter = styled.div`
   justify-content: center;
   background-color: #ffffff;
   width: 100%;
-  height: 10vh;
   color: #1d191d;
+  margin-top: 10%;
 
   hr {
     text-decoration: none;
@@ -22,6 +22,7 @@ const StyledFooter = styled.div`
   }
 
 @media screen and (max-width: 800px) {
+    margin-top: 25%;
   }
 `;
 
