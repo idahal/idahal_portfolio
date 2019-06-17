@@ -29,8 +29,9 @@ const StyledHeader = styled.div`
 
     header h1 {
       font-size: 70px;
-      margin-left: 5%;
       text-align: left;
+      margin: 10% 0% 2% 5%;
+
     }
 
     header h3 {

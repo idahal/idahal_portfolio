@@ -29,7 +29,7 @@ const StyledContact = styled.div`
     div h1 {
       line-height: 1;
       font-size: 70px;
-      margin-left: 5%;
+      margin: 10% 0% 2% 5%;
       text-align: left;
     }
     .title_visit .title_email{
