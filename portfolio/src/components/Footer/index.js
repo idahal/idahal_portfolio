@@ -8,7 +8,12 @@ const StyledFooter = styled.div`
   background-color: #ffffff;
   width: 100%;
   color: #1d191d;
-  margin-top: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+
 
   hr {
     text-decoration: none;
@@ -22,7 +27,7 @@ const StyledFooter = styled.div`
   }
 
 @media screen and (max-width: 800px) {
-    margin-top: 25%;
+
   }
 `;
 
