@@ -5,19 +5,20 @@ import { Link } from "@reach/router";
 
 const StyledNavbar = styled.div`
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   background-color: #ffffff;
-  font-size: 18px;
+  font-size: 1.3rem;
 
   a {
     color: #1d191d;
     text-decoration: none;
     font-weight: 700;
-    font-size: 18px;
-    margin: 0 10px;
+    font-size: 1.5rem;
+    margin: 0 2%;
   }
 
   @media screen and (max-width: 800px) {
