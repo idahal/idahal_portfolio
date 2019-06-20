@@ -13,12 +13,19 @@ const StyledContact = styled.div`
   color: #1d191d;
 
   div h1 {
-    font-size: 90px;
+    font-size: 6rem;
     margin: 2% 0 2% 0;
   }
 
   a {
     color: #1d191d;
+  }
+  .title_visit, .title_email{
+    font-size: 2rem;
+  }
+
+  div h4 {
+    font-size: 1.5rem;
   }
 
   @media screen and (max-width: 800px) {
@@ -27,7 +34,7 @@ const StyledContact = styled.div`
 
     div h1 {
       line-height: 1;
-      font-size: 70px;
+      font-size: 4rem;
       margin: 10% 0% 2% 5%;
       text-align: left;
     }
