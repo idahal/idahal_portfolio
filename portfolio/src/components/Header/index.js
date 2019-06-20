@@ -11,13 +11,17 @@ const StyledHeader = styled.div`
   color: #1d191d;
 
   header h1 {
-    font-size: 90px;
+    font-size: 6rem;
     margin: 2% 0 2% 0;
     }
 
+    header h3 {
+      font-size: 1.5rem;
+    }
+
   .profileImage {
-    height: 220px;
-    width: 220px;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     display: flex;
     margin: auto;
@@ -27,7 +31,7 @@ const StyledHeader = styled.div`
     text-align: center;
 
     header h1 {
-      font-size: 70px;
+      font-size: 4rem;
       text-align: left;
       margin: 10% 0% 2% 5%;
 
