@@ -1,6 +1,7 @@
 import fastSecurityDesktop from '../../src/images/fs_square.jpg';
 import memoryDesktop from '../../src/images/memory_square.PNG';
 import photoifyDesktop from '../../src/images/photoify_square.jpg';
+import companyDesktop from '../../src/images/company_desktop.PNG';
 
 const projects = [  {
       name: "Photoify",
@@ -19,7 +20,13 @@ const projects = [  {
       image: fastSecurityDesktop,
       description: "A landing page. This is a school project by Yrgo students of Web Development, Digital Designer and Computer Graphics Design. The assignment was to create a landing page for a new product FastSecurity, FS1.0.",
       link: "https://github.com/lovisahallgren/FastSecurity",
-  }
+  },
+  {
+    name: "The company page",
+    image: companyDesktop,
+    description: "This is a homepage for a craftsmen company. The page is build using react.JS",
+    link: "https://github.com/idahal/The_company_page",
+}
 ]
 
 export default projects;

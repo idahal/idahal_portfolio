@@ -5,13 +5,15 @@ import styled from "styled-components";
 const StyledProjectsItem = styled.div`
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   background-color: #ffffff;
-  width: 27%;
+  width: 30%;
   color: #1d191d;
   border: 3px solid #e0cbbd;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 2%;
 
 img {
   width: 70%;
@@ -28,7 +30,7 @@ header p {
 }
 
 :hover {
-  width: 27%;
+  width: 30%;
   background-color: #e0cbbd;
 }
 

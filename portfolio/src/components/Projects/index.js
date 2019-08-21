@@ -6,7 +6,8 @@ import projects from '../../../src/data/projects.js';;
 const StyledProjects = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #ffffff;
   width: 100%;
 
